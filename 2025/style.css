@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: "Georgia";
+background-color: #f1f1f1;
+color: white;
+}
+.container {width: 1100px; height: auto; margin: 0 auto 20px auto; padding: 0; background-color: white;}
+.overlay {
+	top:0:
+  bottom: 0; 
+  color:white;
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  font-size: 15px;
+  padding: 10px;
+  text-align: right;
+  font-family: "Georgia";
+}
+a:link {color: #004265;}
+a:visited {color: #004265;}
+a:hover {color: #000080;}
+a:active {color: #000080;}
+/* 头部标题 */
+.header {
+  padding: 5px;
+  color:white;
+  background: black;
+  background-image: url('bk.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+ 
+.header h1 {
+background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+	text-align: center;
+	padding: 5px;
+  font-size: 35px;
+  color:white;
+  font-family: "Georgia";
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+   font-family:"Verdana";
+  background-color: #004265;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+
+}
+
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+ .topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  font-family: "Georgia";
+  padding-left: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+}
+.rightcolumn ul {
+  margin-left: 25px;
+  padding-left: 0;
+}
+
+.rightcolumn li{
+	height: 45px;
+}
+ 
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  padding: 20px;
+  color: black;
+  margin-top: 20px;
+  text-align: justify;
+  font-family: "Georgia";
+  
+}
+
+.card h2{
+font-size: 18px;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #004265;
+  margin-top: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+ .footer h2{
+ text-align: center;
+ color: white;
+ font-size: 15px;
+ }
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
